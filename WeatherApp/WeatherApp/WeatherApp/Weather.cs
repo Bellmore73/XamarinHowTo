@@ -9,7 +9,7 @@ namespace WeatherApp
         public string Title { get; set; }
         public string Temperature { get; set; }
         public string Wind { get; set; }
-        public string Humididty { get; set; }
+        public string Humidity { get; set; }
         public string Visibility { get; set; }
         public string Sunrise { get; set; }
         public string Sunset { get; set; }
@@ -19,7 +19,7 @@ namespace WeatherApp
             Title = string.Empty;
             Temperature = string.Empty;
             Wind = string.Empty;
-            Humididty = string.Empty;
+            Humidity = string.Empty;
             Visibility = string.Empty;
             Sunrise = string.Empty;
             Sunset = string.Empty;

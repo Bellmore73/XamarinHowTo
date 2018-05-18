@@ -16,13 +16,14 @@ namespace WeatherApp
 		{
 			InitializeComponent ();
 		    Title = "Sample Weather App";
-		    getWeatherBtn.Clicked += GetWeatherButton_Clicked;
+		    GetWeatherBtn.Clicked += GetWeatherButton_Clicked;
 		}
 
 	    private async void GetWeatherButton_Clicked(object sender, EventArgs e)
 	    {
-	        var weather = await Core.GetWeather("60601");
-	        getWeatherBtn.Text = weather.Title;
+	        var weather = await Core.GetWeather(ZipCodeEntry.Text);
+	        BindingContext = weather;
+	        GetWeatherBtn.Text = "Search Again";
 	    }
 
     }

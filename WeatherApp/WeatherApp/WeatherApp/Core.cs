@@ -22,7 +22,7 @@ namespace WeatherApp
                     Title = results["name"],
                     Temperature = $"{results["main"]["temp"]} F",
                     Wind = $"{results["wind"]["speed"]} mph",
-                    Humididty = $"{results["main"]["humidity"]} %",
+                    Humidity = $"{results["main"]["humidity"]} %",
                     Visibility = $"{results["weather"][0]["main"]}",
                     Sunrise = $"{epoch.AddSeconds((double)results["sys"]["sunrise"])} UTC",
                     Sunset = $"{epoch.AddSeconds((double)results["sys"]["sunset"])} UTC",
